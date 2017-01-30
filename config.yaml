@@ -1,0 +1,10 @@
+---
+
+consumer_key: "REPLACEME"
+consumer_secret: "REPLACEME"
+access_token: "REPLACEME"
+access_secret: "REPLACEME"
+# Change the followers below to who you want to follow
+follow:
+  - HibachiXpress
+  - standouthost
