@@ -68,8 +68,6 @@ func main() {
         // open database, and create table if needed
         db := InitDB("/opt/repeatafterme/repeatafterme.db")
         CreateTable(db)
-        // Send a Tweet
-        //tweet, resp, err := client.Statuses.Update("testing new bot", nil)
 
         // Loop over the usernames in the config file, and look up their tweets since last time.
         for username := range follow {
