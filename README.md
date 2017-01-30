@@ -33,6 +33,7 @@ The imagined use case is for people to follow political accounts and retweet / l
   4. `mkdir /etc/repeatafterme`
   5. Edit /etc/repeatafterme/config.yaml and fill in all the details
   6. Run /usr/sbin/repeatafterme, if on a persistant server run it in screen / tmux to keep it going until the server dies.
+
 #### Docker
   1. Run `make docker`
   2. go into the docker dir, and run `./build.sh`
