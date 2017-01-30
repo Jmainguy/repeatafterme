@@ -20,6 +20,21 @@ The imagined use case is for people to follow political accounts and retweet / l
   2. Or just yum install from this repo where I uploaded to.
   3. Edit /etc/repeatafterme/config.yaml and add your credentials from the API section above, and a list of users to follow.
   4. `systemctl start repeatafterme`
+
 #### DEB
+  1. I am super lazy, I don't use ubuntu / debian for much, if someone wants this packaged up in a DEB let me know and I can make that happen.
+  2. Until then, follow the Golang section.
+
+
+#### Golang
+  1. run `go build` from inside the dir
+  2. Copy the resulting binary somewhere like /usr/sbin/repeatafterme
+  3. `mkdir -p /opt/repeatafterme`
+  4. `mkdir /etc/repeatafterme`
+  5. Edit /etc/repeatafterme/config.yaml and fill in all the details
+  6. Run /usr/sbin/repeatafterme, if on a persistant server run it in screen / tmux to keep it going until the server dies.
 #### Docker
-Install the RPM / DEB (depending on os) / Docker image, edit the config file, start the service. Done
+  1. Run `make docker`
+  2. go into the docker dir, and run `./build.sh`
+  3. Edit the config.yaml file there (it gets mounted inside the container)
+  4. then run with `./run.sh`
